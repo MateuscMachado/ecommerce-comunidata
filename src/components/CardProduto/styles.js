@@ -4,10 +4,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    height: 19em;
-    width: 250px;
-    margin-top: 10px;
+    height: 17em;
+    width: 13em;
+    margin-top: 1em;
+    margin-right: 1em;
     border-radius: 15px;
+    
 `
 
 export const ImageContainer = styled.div`
@@ -16,7 +18,7 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled.img`
-    width: 15.5em;
+    width: 100%;
     border-radius: 15px;;
 `
 
@@ -25,7 +27,7 @@ export const TextContainer = styled.div`
 `
 
 export const Title = styled.h3`
-bottom: 0;
+    font-size: 14px;
  float: left;
 `
 

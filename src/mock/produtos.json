@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nome": "hdd 500gb",
+        "nome": "HDD 500gb",
         "descricao": "este hdd salva mais de 500gb de lembranças",
         "qtdEstoque": 30,
         "dataCadastro": "2019-07-30",
@@ -15,7 +15,7 @@
     },
     {
         "id": 2,
-        "nome": "moto g6",
+        "nome": "Moto g6",
         "descricao": "captura fotos inesqueciveis",
         "qtdEstoque": 40,
         "dataCadastro": "2020-06-02",
@@ -29,8 +29,8 @@
     },
     {
         "id": 3,
-        "nome": "caneca de porcelana verde",
-        "descricao": "linda caneca para presentear o amor da sua vida",
+        "nome": "Xícara",
+        "descricao": "linda Xícara para presentear o amor da sua vida",
         "qtdEstoque": 8,
         "dataCadastro": "2019-05-04",
         "valorUnitario": 40.0,
@@ -43,7 +43,7 @@
     },
     {
         "id": 4,
-        "nome": "tv 4k smart",
+        "nome": "Tv 4k smart",
         "descricao": "tv 4k smart com bordas invisiveis e som espacial",
         "qtdEstoque": 300,
         "dataCadastro": "2020-02-29",
@@ -57,7 +57,7 @@
     },
     {
         "id": 5,
-        "nome": "ouya",
+        "nome": "Ouya",
         "descricao": "console super raro parou de ser produzido",
         "qtdEstoque": 3,
         "dataCadastro": "2013-06-25",

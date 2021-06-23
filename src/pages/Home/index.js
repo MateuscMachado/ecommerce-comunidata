@@ -11,7 +11,7 @@ function Home() {
     console.log(listaProdutos);
 
     return (
-        <div>
+        <div style={{display:"flex",flexWrap:"wrap"}}>
             {
                 listaProdutos.map(produto => {
                     return <Produto key={produto.id} nome={produto.nome} descricao={produto.descricao} url={produto.url} preco={produto.valorUnitario} />
