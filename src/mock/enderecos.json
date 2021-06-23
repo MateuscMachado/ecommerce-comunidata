@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "cep": "1001",
+        "logradouro": "Praça da Sé",
+        "bairro": "Sé",
+        "localidade": "São Paulo",
+        "numero": 256,
+        "complemento": "lado ímpar",
+        "uf": "SP"
+    },
+    {
+        "id": 2,
+        "cep": "23980",
+        "logradouro": "Rua José Bonifácio",
+        "bairro": "São Domingos",
+        "localidade": "Niterói",
+        "numero": 46,
+        "complemento": "Apto 302",
+        "uf": "RJ"
+    },
+    {
+        "id": 3,
+        "cep": "25280",
+        "logradouro": "Rua Doutor Hans Bistrischan",
+        "bairro": "Retiro",
+        "localidade": "Petrópolis",
+        "numero": 185,
+        "complemento": "Casa verde",
+        "uf": "RJ"
+    },
+    {
+        "id": 4,
+        "cep": "66457",
+        "logradouro": "Travessa Itaituba",
+        "bairro": "Val-de-Cães",
+        "localidade": "Belém",
+        "numero": 189,
+        "complemento": "Bloco B Apto 2201",
+        "uf": "PA"
+    },
+    {
+        "id": 5,
+        "cep": "75012",
+        "logradouro": "Rua do Bougainville",
+        "bairro": "Vila Wilson Guimarães",
+        "localidade": "Catalão",
+        "numero": 6,
+        "complemento": "Casa dos fundos",
+        "uf": "GO"
+    },
+    {
+        "id": 6,
+        "cep": "35294",
+        "logradouro": "Rua José Alexandrino Campos",
+        "bairro": "Graça",
+        "localidade": "Caratinga",
+        "numero": 774,
+        "complemento": "Com torre telefonica",
+        "uf": "MG"
+    },
+    {
+        "id": 7,
+        "cep": "24210001",
+        "logradouro": "Rua General Andrade Neves",
+        "bairro": "São Domingos",
+        "localidade": "Niterói",
+        "numero": 45,
+        "complemento": "de 120/121 ao fim",
+        "uf": "RJ"
+    },
+    {
+        "id": 8,
+        "cep": "25620001",
+        "logradouro": "Rua do Imperador",
+        "bairro": "Centro",
+        "localidade": "Petrópolis",
+        "numero": 45,
+        "complemento": "de 554 ao fim - lado par",
+        "uf": "RJ"
+    },
+    {
+        "id": 9,
+        "cep": "22410003",
+        "logradouro": "Rua Visconde de Pirajá",
+        "bairro": "Ipanema",
+        "localidade": "Rio de Janeiro",
+        "numero": 45,
+        "complemento": "de 333 ao fim - lado ímpar",
+        "uf": "RJ"
+    }
+]

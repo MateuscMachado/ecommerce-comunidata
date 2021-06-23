@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "nome": "hdd 500gb",
+        "descricao": "este hdd salva mais de 500gb de lembranças",
+        "qtdEstoque": 30,
+        "dataCadastro": "2019-07-30",
+        "valorUnitario": 150.0,
+        "url": "https://cdn.pixabay.com/photo/2013/07/12/19/16/hdd-154463_1280.png",
+        "categoria": {
+            "id": 1,
+            "nome": "HDD",
+            "descricao": "Armazena todos seus melhores momentos em um computador"
+        }
+    },
+    {
+        "id": 2,
+        "nome": "moto g6",
+        "descricao": "captura fotos inesqueciveis",
+        "qtdEstoque": 40,
+        "dataCadastro": "2020-06-02",
+        "valorUnitario": 650.0,
+        "url": "https://images-americanas.b2w.io/produtos/01/00/offers/01/00/item/133453/1/133453185_1GG.png",
+        "categoria": {
+            "id": 2,
+            "nome": "Celular",
+            "descricao": "dispositivo para falar com seus melhores amigos"
+        }
+    },
+    {
+        "id": 3,
+        "nome": "caneca de porcelana verde",
+        "descricao": "linda caneca para presentear o amor da sua vida",
+        "qtdEstoque": 8,
+        "dataCadastro": "2019-05-04",
+        "valorUnitario": 40.0,
+        "url": "https://cdn-cosmos.bluesoft.com.br/products/7891361585465",
+        "categoria": {
+            "id": 3,
+            "nome": "caneca",
+            "descricao": "porcelana para beber sua bebida quente favorita"
+        }
+    },
+    {
+        "id": 4,
+        "nome": "tv 4k smart",
+        "descricao": "tv 4k smart com bordas invisiveis e som espacial",
+        "qtdEstoque": 300,
+        "dataCadastro": "2020-02-29",
+        "valorUnitario": 1500.0,
+        "url": "https://images-americanas.b2w.io/produtos/01/00/offers/01/00/item/133718/3/133718358_1GG.png",
+        "categoria": {
+            "id": 4,
+            "nome": "Televisão",
+            "descricao": "aparelho eletronico para assistir seus filmes e series favoritos"
+        }
+    },
+    {
+        "id": 5,
+        "nome": "ouya",
+        "descricao": "console super raro parou de ser produzido",
+        "qtdEstoque": 3,
+        "dataCadastro": "2013-06-25",
+        "valorUnitario": 19.99,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ouya_video_game_microconsole_%289172860385%29_with_transparency.png",
+        "categoria": {
+            "id": 5,
+            "nome": "Console",
+            "descricao": "aparelho para jogos eletronicos favoritos"
+        }
+    },
+    {
+        "id": 6,
+        "nome": "Garrafa termica",
+        "descricao": "armazena suas melhores bebidas",
+        "qtdEstoque": 20,
+        "dataCadastro": "2019-08-11",
+        "valorUnitario": 70.0,
+        "url": "https://cdnv2.moovin.com.br/termolar/imagens/produtos/original/garrafa-termica-chimarrita-pampeana-1l-rosa-rolha-dupla-acao-d9d10ed36aa233e67505b536899cf9f3.png",
+        "categoria": {
+            "id": 6,
+            "nome": "Recipiente",
+            "descricao": "Garrafa para beber sua bebida quente"
+        }
+    }
+]
