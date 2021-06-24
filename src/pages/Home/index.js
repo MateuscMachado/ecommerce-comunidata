@@ -8,7 +8,7 @@ import { Container } from "./style"
 
 function Home() {
 
-    const [listaProdutos, setListaProdutos] = useState(produtos)
+    const [listaProdutos, setListaProdutos] = useState([])
 
     console.log(listaProdutos);
 
