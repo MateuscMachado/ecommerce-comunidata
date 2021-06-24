@@ -2,15 +2,23 @@ import styled from "styled-components"
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+   
 `;
 export const Form= styled.form`
     height: 100%;
+<<<<<<< HEAD
     flex-direction: row;
     
+=======
+    width: 80%;
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+
+>>>>>>> 27ae0c30286feb9c7ecb32ecd32a1e46d66f8da1
 `;
 
 export const Title = styled.h1`
@@ -20,15 +28,37 @@ export const Title = styled.h1`
     font-weight: bold;
     margin-bottom: 10px;
     color: #444;
-    
 `;
 
 export const Input = styled.input`
-    width: 300px;
-    height: 40px;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    box-shadow: none;
-    border-color: #D0D0D0;
-    
+    margin: 1rem 0.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+`;
+
+export const AreaForm1 = styled.div`
+    width: 40%;
+    background-color: yellow;
+
+`;
+
+
+export const AreaForm2 = styled.div`
+    width: 40%;
+    background-color: green;
+
+`;
+
+export const ContainerTitle = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+`;
+
+export const Button = styled.div`
+    width: 50%;
 `;
