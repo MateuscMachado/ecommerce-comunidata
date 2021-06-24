@@ -5,6 +5,7 @@ import produtos from '../../mock/produtos.json'
 import CardProduto from "../../components/CardProduto";
 import { Container } from "./style"
 
+
 function Home() {
 
     const [listaProdutos, setListaProdutos] = useState(produtos)
