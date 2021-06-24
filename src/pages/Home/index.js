@@ -10,10 +10,6 @@ function Home() {
 
     const [listaProdutos, setListaProdutos] = useState(produtos)
 
-    console.log(listaProdutos);
-
-
-
   useEffect(() => {
         async function handleProducts() {
             const response = await api.get(`/produtos`)
