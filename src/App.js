@@ -4,6 +4,7 @@ import Produto from "./pages/Produto";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GlobalStyle from './styles/global';
+import AreaCliente from './pages/AreaCliente'
 import Login from "./pages/Login";
 import Admin from './pages/Admin/';
 import Cadastro from './pages/Cadastro';
@@ -18,6 +19,8 @@ function App() {
         <div style={{ background: "gray", height: "100vh", width: "70%" }}>
           <Switch>
             <Route path='/' exact component={Home} />
+            <Route path='/produto'  component={Produto} />
+            <Route path='/cliente'  component={AreaCliente} />
             <Route path='/produto' exact component={Produto} />
             <Route path='/login' exact component={Login} />
             <Route path='/admin' exact component={Admin} />

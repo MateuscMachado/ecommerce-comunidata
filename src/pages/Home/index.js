@@ -12,13 +12,16 @@ function Home() {
 
     console.log(listaProdutos);
 
-   /* useEffect(() => {
-        async function fetchData() {
+
+
+  useEffect(() => {
+        async function handleProducts() {
             const response = await api.get(`/produtos`)
             setListaProdutos(response.data)
         }
-        fetchData();
-    }, [])*/
+        handleProducts();
+    }, [])
+
 
     return (
         <div style={{ display: "flex", flexWrap: "wrap" }}>
