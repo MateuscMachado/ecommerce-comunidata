@@ -1,9 +1,13 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
     Container,
     Title,
     Input,
     Form,
+    AreaForm1,
+    AreaForm2,
+    ContainerTitle,
+    Button
 } from "./styles";
 import { apiCep } from '../../services/apiCep';
 
@@ -21,7 +25,7 @@ const UserForm = () => {
         cep: '',
         logradouro: '',
         localidade: '',
-        estado: '',
+        uf: '',
         numero: ''
 
     }
@@ -33,110 +37,78 @@ const UserForm = () => {
         ))
     }
 
-    const [adress, setAdress] = useState();
-    const [hasData, setHasData] = useState(false);
-
+    const [address, setAddress] = useState("");
 
     async function callAPI() {
         var cep = document.getElementById("cep").value;
-        //cep = cep.replace("-", "")
-        //`/${cep}/json` TEMPLATE STRING
         var result = await apiCep.get(`/${cep}/json`);
-        //Armazena o result.data no estado
-        setAdress(result.data);
-        setHasData(true)
+        setAddress(result.data);
     }
 
     return (
-        <Container>
-            <Title>Formulário de Cadastro</Title>
-            <Form>
-                <div className="form-group">
-                    <Input name="Nome-Completo"
-                        placeholder="Nome"
-                        onChange={e => setInput({ nomeCompleto: e.target.value })}
-                        label="Nome-Completo"
-                    />
-                </div>
-                <div className="form-group">
-                    <Input name="email"
-                        placeholder="E-mail"
-                        onChange={e => setInput({ email: e.target.value })}
-                        label="E-mail"
-                    />
-                </div>
-
-                <div className="form-group">
-                    <Input name="nomeUsuario"
-                        placeholder="Usuário"
-                        onChange={e => setInput({ nomeUsuario: e.target.value })}
-                        label="Nome-Usuario"
-                    />
-                </div>
-
-                <div className="form-group">
-                    <Input name="senha"
-                        placeholder="Senha"
-                        onChange={e => setInput({ senha: e.target.value })}
-                        label="Senha"
-                    />
-                </div>
-
-                <div className="form-group">
-                    <Input name="cpf"
-                        placeholder="CPF"
-                        onChange={e => setInput({ cpf: e.target.value })}
-                        label="CPF"
-                    />
-                </div>
-
-                <div className="form-group">
-                    <Input name="telefone"
-                        placeholder="Telefone"
-                        onChange={e => setInput({ telefone: e.target.value })}
-                        label="Telefone"
-                    />
-                </div>
-
-                <div className="form-group">
-                    <Input name="dataNasc"
-                        placeholder="Data Nascimento"
-                        onChange={e => setInput({ dataNasc: e.target.value })}
-                        label="DataNasc"
-                    />
-                </div>
-
-                <div className="form-group">
-                    <Input name="cep"
-                        placeholder="CEP"
-                        onChange={e => setInput({ cep: e.target.value })}
-                        label="CEP"
-                    />
-                    <button onClick={callAPI}>Fazer Request</button>
-                    {
-                        hasData ? (
-                            <div>
-                                <h3>Logradouro: <strong></strong>{adress.logradouro}</h3>
-                                <h3>Localidade: <strong></strong>{adress.localidade}</h3>
-                                <h3>Estado: <strong></strong>{adress.estado}</h3>
-                            </div>
-                        ) : null
-                    }
-                </div>
-
-                <div className="form-group">
-                    <Input name="numero"
-                        placeholder="Número"
-                        onChange={e => setInput({ numero: e.target.value })}
-                        label="Numero"
-                    />
-                </div>
-
-                <div className="form-group">
-                    <button type="button" classeName="btn primary">Enviar Dados</button>
-                </div>
-            </Form>
-        </Container>
+        <>
+            <ContainerTitle>
+                <Title>Formulário de Cadastro</Title>
+            </ContainerTitle>
+            <Container>
+                <Form>
+                    <AreaForm1>
+                        <Input name="Nome-Completo"
+                            placeholder="Nome"
+                            onChange={e => setInput({ nomeCompleto: e.target.value })}
+                            label="Nome-Completo"
+                        />
+                        <Input name="email"
+                            placeholder="E-mail"
+                            onChange={e => setInput({ email: e.target.value })}
+                            label="E-mail"
+                        />
+                        <Input name="nomeUsuario"
+                            placeholder="Usuário"
+                            onChange={e => setInput({ nomeUsuario: e.target.value })}
+                            label="Nome-Usuario"
+                        />
+                        <Input name="senha"
+                            placeholder="Senha"
+                            onChange={e => setInput({ senha: e.target.value })}
+                            label="Senha"
+                        />
+                        <Input name="cpf"
+                            placeholder="CPF"
+                            onChange={e => setInput({ cpf: e.target.value })}
+                            label="CPF"
+                        />
+                        <Input name="telefone"
+                            placeholder="Telefone"
+                            onChange={e => setInput({ telefone: e.target.value })}
+                            label="Telefone"
+                        />
+                        <Input name="dataNasc"
+                            placeholder="Data Nascimento"
+                            onChange={e => setInput({ dataNasc: e.target.value })}
+                            label="DataNasc"
+                        />
+                    </AreaForm1>
+                    <AreaForm2>
+                        <Input id="cep"
+                            placeholder="CEP"
+                            onBlur={callAPI}
+                            label="CEP"
+                        />
+                            <Input disabled="true" value={address.logradouro}/>
+                            <Input disabled="true" value={address.localidade}/>
+                            <Input disabled="true" value={address.uf}/>
+                            
+                        <Input name="numero"
+                            placeholder="Número"
+                            onChange={e => setInput({ numero: e.target.value })}
+                            label="Numero"
+                        />
+                        <button type="button" classeName="btn primary">Enviar Dados</button>
+                    </AreaForm2>
+                </Form>
+            </Container>
+        </>
     );
 }
 export default UserForm;
