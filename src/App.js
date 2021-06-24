@@ -4,7 +4,9 @@ import Produto from "./pages/Produto";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GlobalStyle from './styles/global';
+import Admin from './pages/Admin/';
 import Cadastro from './pages/Cadastro';
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/produto' exact component={Produto} />
+            <Route path='/admin' exact component={Admin} />
             <Route path='/cadastro' exact component={Cadastro} />
           </Switch>
         </div>
