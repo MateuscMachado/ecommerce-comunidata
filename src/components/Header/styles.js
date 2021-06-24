@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
 
-    background-color: blue;
+    background-color: rgb(30, 75, 117);
     height: 3em;
     display: flex ;
     
