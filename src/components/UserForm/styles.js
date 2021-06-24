@@ -11,7 +11,7 @@ export const Form= styled.form`
     height: 100%;
     flex-direction: row;
     
-`
+`;
 
 export const Title = styled.h1`
     display: flex;
