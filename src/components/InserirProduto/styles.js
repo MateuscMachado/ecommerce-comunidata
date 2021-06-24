@@ -8,8 +8,9 @@ export const Container = styled.div`
     max-width: 70%;
 `
 export const Input = styled.input`
-    background-color: #c4c4c4;
+    background-color: #e9e6e6;
     padding: 2%;
+    font-size: 20px;
     border-radius: 0.5em;
 `
 

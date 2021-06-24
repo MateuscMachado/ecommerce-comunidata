@@ -9,9 +9,18 @@ export const Container = styled.div`
 `
 
 export const Input = styled.input`
-    background-color: #c4c4c4;
+    background-color: #e9e6e6;
     padding: 2%;
+    font-size: 20px;
     border-radius: 0.5em;
+`
+
+export const InfoID = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 5%;
 `
 
 export const Title = styled.div`
