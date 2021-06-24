@@ -4,6 +4,7 @@ import Produto from "./pages/Produto";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GlobalStyle from './styles/global';
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/produto' exact component={Produto} />
+            <Route path='/login' exact component={Login} />
           </Switch>
         </div>
       </div>

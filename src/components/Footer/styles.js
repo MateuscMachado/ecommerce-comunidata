@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterStyle = styled.footer`
 
-    background-color: blue;
+    background-color: rgb(30, 75, 117);
     height: 10em;
     
 `;
