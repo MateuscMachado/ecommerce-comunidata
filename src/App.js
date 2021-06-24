@@ -5,6 +5,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GlobalStyle from './styles/global';
 import AreaCliente from './pages/AreaCliente'
+import Login from "./pages/Login";
+import Admin from './pages/Admin/';
+import Cadastro from './pages/Cadastro';
+
+
 
 function App() {
   return (
@@ -16,6 +21,10 @@ function App() {
             <Route path='/' exact component={Home} />
             <Route path='/produto'  component={Produto} />
             <Route path='/cliente'  component={AreaCliente} />
+            <Route path='/produto' exact component={Produto} />
+            <Route path='/login' exact component={Login} />
+            <Route path='/admin' exact component={Admin} />
+            <Route path='/cadastro' exact component={Cadastro} />
           </Switch>
         </div>
       </div>
