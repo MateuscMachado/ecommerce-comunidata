@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Button, Container, Input, Texto } from "./styles"
+import { Button, Container, Input, Texto, P } from "./styles"
 import {useState} from "react"
 
 
@@ -17,7 +17,7 @@ function Login() {
                 </form>
                 <Link to="/" ><Button>Entrar</Button> </Link>
                 <Texto>
-                    <p>Não cadastrado</p>
+                    <P>Não cadastrado?</P>
                     <Link to="">Crie uma conta</Link>
                 </Texto>
             </Container>
