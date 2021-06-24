@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../../services/api";
-import produtos from '../../mock/produtos.json'
 import CardProduto from "../../components/CardProduto";
 import { Container } from "./style"
 
