@@ -1,7 +1,6 @@
-import { Up, About, H1, Follow, Image, Logo, Down, P, Ul, Li, I, Numero } from './styles'
-import { Link } from 'react-router-dom'
-
+import { Up, About, H1, Follow, Image, Logo, Down, P, I} from './styles'
 import { FooterStyle } from "./styles";
+
 function Footer() {
     return (
         <FooterStyle>

@@ -6,7 +6,6 @@ export const FooterStyle = styled.footer`
     height: 12em;
     
 `;
-
 export const Up = styled.div`
     display: flexbox;
     height: 70%;
@@ -26,14 +25,12 @@ export const H1 = styled.h1`
     text-decoration: none;
 
 `;
-
 export const Follow = styled.div`
     margin-left:10% ;
     margin-top: 10px;
     width: 40%;
     height:100% ;
 `;
-
 export const I = styled.img`
     box-shadow: 0 0 1em gold;
     height: 45px;
@@ -41,25 +38,21 @@ export const I = styled.img`
     border-radius: 50%;
     margin-left: 40px;
 `;
-
 export const Image = styled.div`
     margin-left:5% ;
     width: 20%;
     height:100% ;
 `;
-
 export const Logo = styled.img`
     float: right;
     margin:0px;
     width: 192px;
     height: 192px;
 `;
-
 export const Down = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left:42% ;
-
+    margin-left:41% ;
 `;
 export const P = styled.div`
 
