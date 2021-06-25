@@ -5,7 +5,6 @@ import { useState } from "react";
 function Header() {
 
     const [prodName, setProdName] = useState();
-    console.log(prodName);
 
     const buscarNome = async () =>{
 
