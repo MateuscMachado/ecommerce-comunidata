@@ -5,7 +5,6 @@ export const Container = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     background-color: #ffffff;
-    max-width: 70%;
     width: 100%;
     
 `
@@ -59,6 +58,7 @@ export const Button = styled.button`
     border-radius: 0.4em;
     font-size: 25px;
     font-weight: bold;
+    padding: 0.4em;
 
     &:hover {
         background-color: #c4c4c4;

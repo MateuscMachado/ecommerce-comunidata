@@ -12,7 +12,6 @@ export const BarraTitulo = styled.div`
 
 export const Conteudo = styled.div`
     display: flex;
-    
 `
 
 export const ColunaOpcoes = styled.aside`

@@ -9,6 +9,7 @@ import {
     AreaImage,
     AreaButton,
     Button,
+    InputImagem
 } from "./styles"
 
 function InserirProduto() {
@@ -46,7 +47,6 @@ function InserirProduto() {
                 Inserir Produto
             </Title>
 
-            <form onSubmit="">
             <InfoProduct>
                 <Input id="InputNome" type="text" placeholder="Nome" 
                     onChange={e => setInput({ nome: e.target.value })}
@@ -72,12 +72,11 @@ function InserirProduto() {
                     label="Categoria"/>
             </InfoProduct>
             <AreaImage>
-                <Input id="InputImagem" type="text" />
+                <InputImagem id="InputImagem" type="image"/>
             </AreaImage>
             <AreaButton>
                 <Button type="submit">Concluído</Button>
             </AreaButton>
-            </form>
         </Container>
     )
 }
