@@ -3,8 +3,10 @@ import { Button, Container, Input, Texto, ContainerTitle, Title } from "./styles
 import { useState } from "react"
 
 function Login() {
-    const [setNome, nome] = useState()
-    const [setSenha, senha] = useState()
+    const [nome, setNome] = useState()
+    const [senha, setSenha] = useState()
+
+
 
     return (
         <div>
@@ -13,10 +15,10 @@ function Login() {
             </ContainerTitle>
             <Container>
                 <form action="">
-                    <Input onChange={a => setNome(a.target.value)} type="text" placeholder="Nome Usuário" />
-                    <Input onChange={b => setSenha(b.target.value)} type="text" placeholder="Senha Usuário " />
+                    <Input id= "username" onChange={a => setNome(a.target.value)} type="text" placeholder="Nome Usuário" />
+                    <Input id = "password" onChange={b => setSenha(b.target.value)} type="text" placeholder="Senha Usuário " />
+                <Link to="/cliente" ><Button>Entrar</Button> </Link>
                 </form>
-                <Link to="/" ><Button>Entrar</Button> </Link>
                 <Texto>
                     <Link to="/cadastro"><p>Não tem cadastro? Crie uma conta</p></Link>
                 </Texto>
