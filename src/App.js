@@ -21,11 +21,11 @@ function App() {
             <FormProvider>
               <Route path='/' exact component={Home} />
               <Route path='/produto' component={Produto} />
-              <Route path='/cliente' component={AreaCliente} />
+              <Route path='/clientes/:clientes+' component={AreaCliente} />
               <Route path='/produto/:produto+' component={Produto} />
-              <Route path='/login' exact component={Login} />
-              <Route path='/admin' exact component={Admin} />
-              <Route path='/cadastro' exact component={Cadastro} />
+              <Route path='/login' component={Login} />
+              <Route path='/admin' component={Admin} />
+              <Route path='/cadastro' component={Cadastro} />
             </FormProvider>
           </Switch>
         </div>
