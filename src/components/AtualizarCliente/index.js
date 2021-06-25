@@ -3,21 +3,19 @@ import CadastroEndereco from "../CadastroEndereco";
 import { useState } from "react";
 import {
     Container,
-    Title,
-    Input,
-    Form,
-    AreaForm1,
-    ContainerTitle,
     Button
 } from "./styles";
+import { api } from "../../services/api";
 
 
-function AtualizarCliente() {
+function AtualizarCliente(props) {
     const [changeBody, setChangeBody] = useState(false)
 
     const handleClick = () => {
         setChangeBody(!changeBody)
     }
+
+    const response = api.put("/clientes", props.id)
 
     return (
         <Container>
