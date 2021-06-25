@@ -26,19 +26,19 @@ export const Title = styled.h1`
 `;
 
 export const Input = styled.input`
-   margin: 1.5rem 2rem;
+   margin: 1rem 2rem;
     width: 80%;
     height: 10%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     border-color: cadetblue;
-    background-color: #A0A0A0
+    background-color: #E9E6E6
     
 `;
 
 export const AreaForm1 = styled.div`
-    width: 80%;
+    width: 40%;
     align-items: center;
 `;
 
