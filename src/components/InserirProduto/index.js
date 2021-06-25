@@ -1,16 +1,7 @@
 import { useEffect, useState } from "react"
 import { api } from "../../services/api";
 
-import {
-    Container,
-    Title,
-    Input,
-    InfoProduct,
-    AreaImage,
-    AreaButton,
-    Button,
-    InputImagem
-} from "./styles"
+import { Container, Title, Input, InfoProduct, AreaImage, AreaButton, Button, InputImagem } from "./styles"
 
 function InserirProduto() {
 
@@ -46,33 +37,32 @@ function InserirProduto() {
             <Title>
                 Inserir Produto
             </Title>
-
             <InfoProduct>
-                <Input id="InputNome" type="text" placeholder="Nome" 
+                <Input id="InputNome" type="text" placeholder="Nome"
                     onChange={e => setInput({ nome: e.target.value })}
-                    label="Nome"/>
+                    label="Nome" />
                 <Input id="InputQuantidade" type="text" placeholder="Quantidade em estoque"
                     onChange={e => setInput({ quantidade: e.target.value })}
-                    label="Quantidade"/>
+                    label="Quantidade" />
             </InfoProduct>
             <InfoProduct>
-                <Input id="InputDescricao" type="text" placeholder="Descrição" 
+                <Input id="InputDescricao" type="text" placeholder="Descrição"
                     onChange={e => setInput({ descricao: e.target.value })}
-                    label="Descricao"/>
+                    label="Descricao" />
                 <Input id="InputCadastro" type="text" placeholder="Data do cadastro"
                     onChange={e => setInput({ dataCadastro: e.target.value })}
-                    label="Data-do-Cadastro"/>
+                    label="Data-do-Cadastro" />
             </InfoProduct>
             <InfoProduct>
                 <Input id="InputValor" type="text" placeholder="Valor unitário"
                     onChange={e => setInput({ valorUnitario: e.target.value })}
-                    label="Valor-Unitario"/>
+                    label="Valor-Unitario" />
                 <Input id="InputCategoria" type="text" placeholder="Categoria"
                     onChange={e => setInput({ categoria: e.target.value })}
-                    label="Categoria"/>
+                    label="Categoria" />
             </InfoProduct>
             <AreaImage>
-                <InputImagem id="InputImagem" type="image"/>
+                <InputImagem id="InputImagem" type="image" />
             </AreaImage>
             <AreaButton>
                 <Button type="submit">Concluído</Button>
@@ -80,5 +70,4 @@ function InserirProduto() {
         </Container>
     )
 }
-
 export default InserirProduto

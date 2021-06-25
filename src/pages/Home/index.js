@@ -2,14 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../../services/api";
 import CardProduto from "../../components/CardProduto";
-import { Container } from "./style"
-
+import { Container, Div } from "./style"
 
 function Home() {
 
     const [listaProdutos, setListaProdutos] = useState([])
 
-  useEffect(() => {
+    useEffect(() => {
         async function handleProducts() {
             const response = await api.get(`/produtos`)
             setListaProdutos(response.data)
@@ -17,9 +16,8 @@ function Home() {
         handleProducts();
     }, [])
 
-
     return (
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
+        <Div>
             {
                 listaProdutos.map(produto => {
                     return (
@@ -31,8 +29,7 @@ function Home() {
                     )
                 })
             }
-        </div>
+        </Div>
     )
 }
-
 export default Home;

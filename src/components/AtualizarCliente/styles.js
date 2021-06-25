@@ -7,7 +7,6 @@ export const Container = styled.div`
     justify-content: center;
     width: 100%;
     background: white;
-   
 `;
 export const Form= styled.form`
     height: 100%;
@@ -15,9 +14,7 @@ export const Form= styled.form`
     justify-content: space-between;
     display: flex;
     text-align: center;
-
 `;
-
 export const Title = styled.h1`
     display: flex;
     align-items: center;
@@ -26,7 +23,6 @@ export const Title = styled.h1`
     margin-top: 1rem;
     color: #242528;
 `;
-
 export const Input = styled.input`
     margin: 1.5rem 2rem;
     height: 10%;
@@ -34,21 +30,16 @@ export const Input = styled.input`
     justify-content: flex-start;
     align-items: center;
     border-color: cadetblue;
-    
 `;
-
 export const AreaForm1 = styled.div`
     width: 40%;
     align-items: center;
 `;
-
-
 export const ContainerTitle = styled.div`
     display: flex;
     text-align: center;
     justify-content: center;
 `;
-
 export const Button = styled.button`
     margin-bottom: 5%;
     height: 5%;

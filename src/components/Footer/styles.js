@@ -4,12 +4,10 @@ export const FooterStyle = styled.footer`
     box-shadow: 0 0 1em rgb(30, 75, 117);
     background-color: rgb(30, 75, 117);
     height: 12em;
-    
 `;
 export const Up = styled.div`
     display: flexbox;
     height: 70%;
-
 `;
 export const About = styled.div`
     margin-top: 10px;
@@ -23,7 +21,6 @@ export const H1 = styled.h1`
     padding-left: 23%;
     font-size: 20px;
     text-decoration: none;
-
 `;
 export const Follow = styled.div`
     margin-left:10% ;

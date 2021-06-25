@@ -6,7 +6,7 @@ export const Container =styled.div`
     align-items: center;
     background: white;
     width: 80%;
-`
+`;
 export const Box = styled.div`
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ export const Box = styled.div`
     h2{
         margin-top: 10vh;
     }
-`
+`;
 export const AreaButtons = styled.div`
     display: flex;
     width: 80%;
@@ -31,4 +31,4 @@ export const AreaButtons = styled.div`
         height: 7vh;
         font-size: 20px;
     }
-`
+`;

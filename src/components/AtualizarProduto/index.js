@@ -1,22 +1,9 @@
-import {useState} from 'react';
-
-import {
-    Container,
-    Title,
-    Input,
-    InfoProduct,
-    AreaImage,
-    AreaButton,
-    Button,
-    InfoID,
-    InputImagem
-} from "./styles"
+import { useState } from 'react';
+import { Container, Title, Input, InfoProduct, AreaImage, AreaButton, Button, InfoID, InputImagem } from "./styles"
 
 function AtualizarProduto() {
 
     const [infoProduto, setInfoProduto] = useState([]);
-
-
 
     /* // Setar as novas informações de produto
     function apiRequest() {
@@ -34,7 +21,7 @@ function AtualizarProduto() {
             </InfoID>
             <InfoProduct>
                 <Input id="InputNome" type="text" placeholder="Nome" />
-                <Input id="InputQuantidade" type="text"placeholder="Quantidade em estoque" />
+                <Input id="InputQuantidade" type="text" placeholder="Quantidade em estoque" />
             </InfoProduct>
             <InfoProduct>
                 <Input id="InputDescricao" type="text" placeholder="Descrição" />
@@ -45,7 +32,7 @@ function AtualizarProduto() {
                 <Input id="InputCategoria" type="text" placeholder="Categoria" />
             </InfoProduct>
             <AreaImage>
-                <InputImagem type="image"/>
+                <InputImagem type="image" />
             </AreaImage>
             <AreaButton>
                 <Button onClick="" >Concluído</Button>
@@ -53,5 +40,4 @@ function AtualizarProduto() {
         </Container>
     )
 }
-
 export default AtualizarProduto

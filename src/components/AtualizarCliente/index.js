@@ -1,12 +1,8 @@
 import ClienteForm from "../ClienteForm";
 import CadastroEndereco from "../CadastroEndereco";
 import { useState } from "react";
-import {
-    Container,
-    Button
-} from "./styles";
+import {Container, Button } from "./styles";
 import { api } from "../../services/api";
-
 
 function AtualizarCliente(props) {
     const [changeBody, setChangeBody] = useState(false)
@@ -33,5 +29,4 @@ function AtualizarCliente(props) {
         </Container>
     )
 }
-
 export default AtualizarCliente;

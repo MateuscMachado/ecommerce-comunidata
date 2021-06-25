@@ -4,17 +4,7 @@ import InserirProduto from "../../components/InserirProduto";
 import DeletarProduto from "../../components/DeletarProduto";
 import AtualizarProduto from "../../components/AtualizarProduto";
 
-import {
-    BarraTitulo,
-    ColunaOpcoes,
-    OpInserir,
-    OpDeletar,
-    OpAtualizar,
-    ListaOpcoes,
-    Conteudo,
-} from './style';
-
-
+import { BarraTitulo, ColunaOpcoes, OpInserir, OpDeletar, OpAtualizar, ListaOpcoes, Conteudo, } from './style';
 
 function Admin(props) {
 
@@ -31,8 +21,6 @@ function Admin(props) {
     function atualizarProduto() {
         setOpcao(3);
     }
-
-    console.log(opcao);
 
     return (
         <>
@@ -61,9 +49,7 @@ function Admin(props) {
                             <AtualizarProduto />
                 }
             </Conteudo>
-
         </>
     )
 }
-
 export default Admin;

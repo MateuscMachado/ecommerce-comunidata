@@ -1,6 +1,6 @@
 import { Link, useHistory } from "react-router-dom"
 import { Button, Container, Input, Texto, ContainerTitle, Title } from "./styles"
-import {  useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { api } from "../../services/api"
 
 function Login() {
@@ -18,7 +18,6 @@ function Login() {
         listClientes();
     }, [])
 
-    
     const handleLogin = (e) => {
         e.preventDefault();
         const usuario = clientes.filter(cliente => cliente.nomeUsuario === nome)[0]
@@ -33,23 +32,21 @@ function Login() {
         }
     }
 
-
     return (
         <>
             <ContainerTitle>
                 <Title>Faça seu Login</Title>
             </ContainerTitle>
             <Container>
-                <form onSubmit={(e)=>handleLogin(e)} >
+                <form onSubmit={(e) => handleLogin(e)} >
                     <Input id="username" onChange={a => setNome(a.target.value)} type="text" placeholder="Nome Usuário" />
                     <Input id="password" onChange={b => setSenha(b.target.value)} type="password" placeholder="Senha Usuário " />
-                    <Button type = "submit" >Entrar</Button>
+                    <Button type="submit" >Entrar</Button>
                 </form>
                 <Texto>
                     <Link to="/cadastro"><p>Não tem cadastro? Crie uma conta</p></Link>
                 </Texto>
             </Container>
-
         </>
     )
 }

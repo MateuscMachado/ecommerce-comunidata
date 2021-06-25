@@ -6,9 +6,7 @@ export const Container = styled.div`
     justify-content: center;
     background-color: #ffffff;
     width: 100%;
-    
-`
-
+`;
 export const Title = styled.div`
     display: flex;
     align-items: center;
@@ -17,8 +15,7 @@ export const Title = styled.div`
     height: 10%;
     font-size: 25px;
     font-weight: bold;
-`
-
+`;
 export const AreaOptions = styled.div`
     display: flex;
     flex-direction: column;
@@ -28,7 +25,7 @@ export const AreaOptions = styled.div`
     height: 40%;
     width: 90%;
     margin-bottom: 30%;
-`
+`;
 export const AreaText = styled.div`
     display: flex;
     justify-content: center;
@@ -39,11 +36,9 @@ export const AreaText = styled.div`
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 3%;
-`
-
+`;
 export const AreaButton = styled.div`
     display: flex;
-    
     align-items: center;
     justify-content: center;
     justify-content: space-between;
@@ -52,8 +47,7 @@ export const AreaButton = styled.div`
     width: 70%;
     margin-left: 15%;
     margin-bottom: 5%;
-`
-
+`;
 export const Button = styled.button`
     border-radius: 0.4em;
     font-size: 25px;
@@ -64,8 +58,7 @@ export const Button = styled.button`
         background-color: #c4c4c4;
         cursor: pointer;
     }
-`
-
+`;
 export const Format = styled.div`
     height: 70%;
-`
+`;

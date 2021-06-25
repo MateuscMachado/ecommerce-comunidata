@@ -13,5 +13,4 @@ function CardProduto(props) {
         </Container>
     )
 }
-
 export default CardProduto;
