@@ -5,14 +5,16 @@ export const Container = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     background-color: #ffffff;
-    max-width: 70%;
+    width: 100%;
 `
 
 export const Input = styled.input`
     background-color: #e9e6e6;
-    padding: 2%;
+    padding: 1%;
     font-size: 20px;
+    border: 3px thin #c4c4c4;
     border-radius: 0.5em;
+
 `
 
 export const InfoID = styled.div`
@@ -65,4 +67,11 @@ export const Button = styled.button`
     font-size: 150%;
     font-weight: bold;
     border-radius: 0.5em;
+`
+
+export const InputImagem = styled.input`
+    background-color: #e9e6e6;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1.5em;
 `

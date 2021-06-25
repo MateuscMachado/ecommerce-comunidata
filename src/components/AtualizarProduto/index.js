@@ -8,7 +8,8 @@ import {
     AreaImage,
     AreaButton,
     Button,
-    InfoID
+    InfoID,
+    InputImagem
 } from "./styles"
 
 function AtualizarProduto() {
@@ -44,7 +45,7 @@ function AtualizarProduto() {
                 <Input id="InputCategoria" type="text" placeholder="Categoria" />
             </InfoProduct>
             <AreaImage>
-                <Input type="image"/>
+                <InputImagem type="image"/>
             </AreaImage>
             <AreaButton>
                 <Button onClick="" >Concluído</Button>
