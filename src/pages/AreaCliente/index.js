@@ -3,6 +3,7 @@ import { useState } from "react"
 import { Banner, Aside, List, Items, Container } from "./styles";
 import AtualizarCliente from "../../components/AtualizarCliente";
 import DeletarCliente from "../../components/DeletarCliente";
+import { useRouteMatch } from "react-router-dom";
 
 
 function AreaCliente() {
@@ -15,6 +16,8 @@ function AreaCliente() {
         setBody(2)
     }
 
+    const { params } = useRouteMatch();
+    console.log(params.clientes);
     return (
         <>
             <Banner>
@@ -29,8 +32,8 @@ function AreaCliente() {
                 </Aside>
                 {
                     body === 1 ?
-                        <AtualizarCliente /> :
-                        <DeletarCliente />
+                        <AtualizarCliente id={params.clientes} /> :
+                        <DeletarCliente id={params.clientes}/>
                 }
             </Container>
         </>
