@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Button= styled.button`
-font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
   background: rgb(30, 75, 117);
@@ -13,22 +12,20 @@ font-family: "Roboto", sans-serif;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
-
-`
+  margin-bottom: 0.5em;
+`;
 
 export const Container= styled.div`
-background-color: gray;
-border-radius:5%;
-align-self:center;
-margin-right: auto;
-margin-left: auto;
-width: 50vh;
-margin-top: 20%;
+  background-color: gray;
+  border-radius:5%;
+  align-self:center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50vh;
+  margin-top: 5%;
+`;
 
-
-`
 export const Input = styled.input`
-     font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -37,14 +34,34 @@ export const Input = styled.input`
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
-    `
+`;
 
 export const Texto= styled.div`
-flex-direction: row;
+  justify-content: center;
+  display: flexbox;
 a{
-    color: black;
-text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
+`;
 
+export const ContainerTitle = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+`;
 
-`
+export const Title = styled.h1`
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: #242528;
+    margin-bottom:0;
+`;
+
+export const P = styled.p`
+  padding-right: 7px;
+`;

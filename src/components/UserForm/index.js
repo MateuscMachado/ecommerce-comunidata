@@ -1,48 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import {
     Container,
     Title,
     Input,
     Form,
     AreaForm1,
-    AreaForm2,
-    ContainerTitle,
-    Button
+    ContainerTitle
 } from "./styles";
-import { apiCep } from '../../services/apiCep';
+import CadastroEndereco from '../CadastroEndereco';
+import { FormContext } from '../../contexts/FormContexts';
+import {api} from '../../services/api';
 
-const UserForm = () => {
+function UserForm () {
+    const {form, setForm, address, setAddress} = useContext(FormContext)
+    const {endereco} = form;
 
-    //contrato inicial com o cliente
-    const initialFormState = {
-        email: '',
-        nomeUsuario: '',
-        nomeCompleto: '',
-        senha: '',
-        cpf: '',
-        telefone: '',
-        dataNasc: '',
-        cep: '',
-        logradouro: '',
-        localidade: '',
-        uf: '',
-        numero: ''
-
-    }
-    const [form, setForm] = useState(initialFormState)
-
-    const setInput = (newValue) => {
+    const changeInput = (newValue) => {
         setForm(form => (
             { ...form, ...newValue }
         ))
     }
+    console.log(form)
+    console.log(address)
 
-    const [address, setAddress] = useState("");
-
-    async function callAPI() {
-        var cep = document.getElementById("cep").value;
-        var result = await apiCep.get(`/${cep}/json`);
-        setAddress(result.data);
+    const inserirCliente = (e) => {
+        e.preventDefault();
+        api
+        .post(`/clientes`, form)
+        .then((response => console.log(response.data)));
     }
 
     return (
@@ -51,63 +36,62 @@ const UserForm = () => {
                 <Title>Formulário de Cadastro</Title>
             </ContainerTitle>
             <Container>
-                <Form>
+                <Form onSubmit={inserirCliente}>
                     <AreaForm1>
-                        <Input name="Nome-Completo"
+                        <Input
+                            name="nomeCompleto"
                             placeholder="Nome"
-                            onChange={e => setInput({ nomeCompleto: e.target.value })}
+                            onChange={e => changeInput({ nomeCompleto: e.target.value })}
                             label="Nome-Completo"
+                            value={form.nomeCompleto}
                         />
-                        <Input name="email"
+                        <Input 
+                            name="email"
                             placeholder="E-mail"
-                            onChange={e => setInput({ email: e.target.value })}
+                            onChange={e => changeInput({ email: e.target.value })}
                             label="E-mail"
+                            value={form.email}
                         />
-                        <Input name="nomeUsuario"
+                        <Input 
+                            name="nomeUsuario"
                             placeholder="Usuário"
-                            onChange={e => setInput({ nomeUsuario: e.target.value })}
+                            onChange={e => changeInput({ nomeUsuario: e.target.value })}
                             label="Nome-Usuario"
+                            value={form.nomeUsuario}
                         />
-                        <Input name="senha"
+                        <Input 
+                            name="senha"
                             placeholder="Senha"
-                            onChange={e => setInput({ senha: e.target.value })}
+                            onChange={e => changeInput({ senha: e.target.value })}
                             label="Senha"
+                            value={form.senha}
                         />
-                        <Input name="cpf"
+                        <Input
+                            name="cpf"
                             placeholder="CPF"
-                            onChange={e => setInput({ cpf: e.target.value })}
+                            onChange={e => changeInput({ cpf: e.target.value })}
+                            value={form.cpf}
                             label="CPF"
                         />
-                        <Input name="telefone"
+                        <Input 
+                            name="telefone"
                             placeholder="Telefone"
-                            onChange={e => setInput({ telefone: e.target.value })}
+                            onChange={e => changeInput({ telefone: e.target.value })}
+                            value={form.telefone}
                             label="Telefone"
                         />
-                        <Input name="dataNasc"
+                        <Input 
+                            name="dataNasc"
                             placeholder="Data Nascimento"
-                            onChange={e => setInput({ dataNasc: e.target.value })}
+                            onChange={e => changeInput({ dataNasc: e.target.value })}
                             label="DataNasc"
+                            value={form.dataNasc}
                         />
                     </AreaForm1>
-                    <AreaForm2>
-                        <Input id="cep"
-                            placeholder="CEP"
-                            onBlur={callAPI}
-                            label="CEP"
-                        />
-                            <Input disabled="true" value={address.logradouro}/>
-                            <Input disabled="true" value={address.localidade}/>
-                            <Input disabled="true" value={address.uf}/>
-                            
-                        <Input name="numero"
-                            placeholder="Número"
-                            onChange={e => setInput({ numero: e.target.value })}
-                            label="Numero"
-                        />
-                        <button type="button" classeName="btn primary">Enviar Dados</button>
-                    </AreaForm2>
+                    <button type="submit">Enviar</button>
                 </Form>
             </Container>
+
         </>
     );
 }
