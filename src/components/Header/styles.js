@@ -9,8 +9,12 @@ export const HeaderStyle = styled.header`
 export const Input = styled.input`
     width: 50vh;
 `;
+export const Formatacao = styled.div`
+    height: 47px;
+    width: 15em;
+`;
 export const LogoHeader = styled.img` 
-
+    height: 47px;
 `;
 export const Div = styled.div`
     border-radius: 0.4em;
@@ -33,8 +37,8 @@ export const Entrar = styled.div`
     align-self:center;
 `;
 export const Text = styled.text` 
-    align-self:center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: whitesmoke;
     font-size:23px;
+    text-decoration: none;
 `;
