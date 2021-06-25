@@ -6,7 +6,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: coral;
+    background: white;
    
 `;
 export const Form= styled.form`
@@ -50,5 +50,9 @@ export const ContainerTitle = styled.div`
 `;
 
 export const Button = styled.button`
-    height: 20%;
+    margin-bottom: 5%;
+    height: 5%;
+    width: 8em;
+    border-radius: 0.5em;
+    margin-right: 2%;
 `;

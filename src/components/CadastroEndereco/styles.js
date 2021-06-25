@@ -16,11 +16,12 @@ export const Input = styled.input`
     justify-content: flex-start;
     align-items: center;
     border-color: cadetblue;
-    background-color: #A0A0A0
+    background-color: #E9E6E6
     
 `;
 
 export const AreaForm2 = styled.div`
+    margin-bottom: 70%;
     width: 80%;
     align-items: center;
 `;
@@ -47,7 +48,7 @@ export const Title = styled.h1`
     align-items: center;
     font-size: 32px;
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #242528;
 `;
 

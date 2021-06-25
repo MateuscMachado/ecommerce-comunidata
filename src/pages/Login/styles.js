@@ -16,7 +16,7 @@ export const Button= styled.button`
 `;
 
 export const Container= styled.div`
-  background-color: gray;
+  background-color: #C4C4C4;
   border-radius:5%;
   align-self:center;
   margin-right: auto;

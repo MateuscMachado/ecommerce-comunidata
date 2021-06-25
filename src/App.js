@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <div style={{ background: "lightgray", height: "100vh", display: "flex", justifyContent: "center" }}>
-        <div style={{ background: "gray", height: "100vh", width: "70%" }}>
+        <div style={{ background: "#C4C4C4", height: "100vh", width: "70%" }}>
           <Switch>
             <FormProvider>
               <Route path='/' exact component={Home} />
