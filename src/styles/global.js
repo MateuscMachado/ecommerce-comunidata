@@ -8,4 +8,7 @@ export default createGlobalStyle`
     outline: 0; 
     box-sizing: border-box;
 } 
+input {
+    border-radius: 0.5em;
+}
 `

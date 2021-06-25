@@ -8,7 +8,7 @@ import AreaCliente from './pages/AreaCliente'
 import Login from "./pages/Login";
 import Admin from './pages/Admin/';
 import Cadastro from './pages/Cadastro';
-
+import { FormProvider } from './contexts/FormContexts'
 
 
 function App() {
@@ -18,13 +18,15 @@ function App() {
       <div style={{ background: "lightgray", height: "100vh", display: "flex", justifyContent: "center" }}>
         <div style={{ background: "gray", height: "100vh", width: "70%" }}>
           <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/produto'  component={Produto} />
-            <Route path='/cliente'  component={AreaCliente} />
-            <Route path='/produto' exact component={Produto} />
-            <Route path='/login' exact component={Login} />
-            <Route path='/admin' exact component={Admin} />
-            <Route path='/cadastro' exact component={Cadastro} />
+            <FormProvider>
+              <Route path='/' exact component={Home} />
+              <Route path='/produto' component={Produto} />
+              <Route path='/cliente' component={AreaCliente} />
+              <Route path='/produto' exact component={Produto} />
+              <Route path='/login' exact component={Login} />
+              <Route path='/admin' exact component={Admin} />
+              <Route path='/cadastro' exact component={Cadastro} />
+            </FormProvider>
           </Switch>
         </div>
       </div>
