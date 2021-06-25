@@ -16,7 +16,7 @@ import {
 
 
 
-function Admin() {
+function Admin(props) {
 
     const [opcao, setOpcao] = useState();
 

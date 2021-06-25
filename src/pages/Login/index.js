@@ -2,8 +2,6 @@ import { Link } from "react-router-dom"
 import { Button, Container, Input, Texto, ContainerTitle, Title } from "./styles"
 import { useState } from "react"
 
-
-
 function Login() {
     const [setNome, nome] = useState()
     const [setSenha, senha] = useState()
