@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
+    margin: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -10,9 +11,9 @@ export const Container = styled.div`
 export const Form= styled.form`
     height: 100%;
     width: 80%;
-    background-color: black;
     justify-content: space-between;
     display: flex;
+    text-align: center;
 
 `;
 
@@ -21,29 +22,25 @@ export const Title = styled.h1`
     align-items: center;
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 10px;
-    color: #444;
+    margin-top: 1rem;
+    color: #242528;
 `;
 
 export const Input = styled.input`
-    margin: 1rem 0.4rem;
+    margin: 1.5rem 2rem;
+    height: 10%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    border-color: cadetblue;
+    
 `;
 
 export const AreaForm1 = styled.div`
     width: 40%;
-    background-color: yellow;
-
+    align-items: center;
 `;
 
-
-export const AreaForm2 = styled.div`
-    width: 40%;
-    background-color: green;
-
-`;
 
 export const ContainerTitle = styled.div`
     display: flex;
@@ -54,6 +51,6 @@ export const ContainerTitle = styled.div`
 
 `;
 
-export const Button = styled.div`
-    width: 50%;
+export const Button = styled.button`
+    height: 20%;
 `;
