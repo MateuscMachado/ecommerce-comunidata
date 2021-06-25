@@ -1,11 +1,12 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    margin: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background: coral;
    
 `;
 export const Form= styled.form`
@@ -44,11 +45,8 @@ export const AreaForm1 = styled.div`
 
 export const ContainerTitle = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     justify-content: center;
-
 `;
 
 export const Button = styled.button`

@@ -5,14 +5,15 @@ export const Banner = styled.div`
     align-items: center;
     justify-content: center;
     height: 10vh;
-    background-color: rgb(30, 75, 117);
+    background-color: #c4c4c4;
 `
 export const Aside = styled.aside`
     display: flex;
     justify-content: center;
     width: 30vh;
     height: 90vh;
-    background-color:white;
+    background-color:#e9e6e6
+;
 `
 
 export const List = styled.ul`
@@ -21,16 +22,17 @@ export const List = styled.ul`
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    width: 85%;
-    a {
-        
-    }
+    width: 80%;
 
 `
 
 export const Items = styled.li`
     border: solid 1px black;
-    margin-bottom: 10%;
+    margin-top: 10%;
+    &:hover {
+        background-color: #c4c4c4;
+        cursor: pointer;
+    }
 `
 export const Container = styled.div`
     display:flex;
