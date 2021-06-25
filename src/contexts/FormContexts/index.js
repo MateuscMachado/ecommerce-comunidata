@@ -30,7 +30,6 @@ export function FormProvider({ children }) {
     const [form, setForm] = useState(initialFormState);
 
     const [changeBody, setChangeBody] = useState(false)
-
     async function callAPI() {
         var cep = document.getElementById("cep").value;
         cep = cep.replace("-", "")

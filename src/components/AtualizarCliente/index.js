@@ -1,4 +1,4 @@
-import UserForm from "../UserForm";
+import ClienteForm from "../ClienteForm";
 import CadastroEndereco from "../CadastroEndereco";
 import { useState } from "react";
 import {Container, Button } from "./styles";
@@ -11,14 +11,19 @@ function AtualizarCliente(props) {
         setChangeBody(!changeBody)
     }
 
-    const response = api.put("/clientes", props.id)
+    // const atualizarCliente = (e) =>{
+    //     e.preventDefault();
+    //     api
+    //     .put(`/clientes`, props.id)
+    //     .then((response => console.log(response.data)));
+    // }
 
     return (
         <Container>
             {
                 changeBody === false ?
                     <CadastroEndereco /> :
-                    <UserForm />
+                    <ClienteForm id={props.id}/>
             }
             <Button onClick = {handleClick}>Próximo</Button>
         </Container>

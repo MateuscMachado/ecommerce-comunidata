@@ -19,7 +19,7 @@ export const Box = styled.div`
         margin-top: 10vh;
     }
 `;
-export const Form = styled.form`
+export const AreaButtons = styled.div`
     display: flex;
     width: 80%;
     justify-content: space-between;

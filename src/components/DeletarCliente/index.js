@@ -1,14 +1,23 @@
-import { Container, Box, Form } from "./styles"
+import { Container, Box, AreaButtons } from "./styles"
+import { api } from "../../services/api";
 
-function DeletarCliente() {
+function DeletarCliente(props) {
+
+    const deletarCliente = async () => {     
+        var response = await api.delete(`/clientes/${props.id}`)
+        alert("Cliente deletado com sucesso!")
+    }
+    console.log("PROPS")
+    console.log(props)
+    
     return (
         <Container>
             <Box>
                 <h2>Deseja mesmo deletar sua conta?</h2>
-                <Form>
-                    <button type="submit">Sim</button>
-                    <button type="submit">Cancelar</button>
-                </Form>
+                <AreaButtons>
+                    <button onClick={deletarCliente}>Sim</button>
+                    <button type="text">Cancelar</button>
+                </AreaButtons>
             </Box>
         </Container>
     )
