@@ -5,7 +5,9 @@ import {
     Input,
     Form,
     AreaForm1,
-    ContainerTitle
+    ContainerTitle,
+    Button,
+    ContainerButton
 } from "./styles";
 import CadastroEndereco from '../CadastroEndereco';
 import { FormContext } from '../../contexts/FormContexts';
@@ -88,7 +90,9 @@ function UserForm () {
                             value={form.dataNasc}
                         />
                     </AreaForm1>
-                    <button type="submit">Enviar</button>
+                    <ContainerButton>
+                    <Button type="submit">Enviar</Button>
+                    </ContainerButton>
                 </Form>
             </Container>
 

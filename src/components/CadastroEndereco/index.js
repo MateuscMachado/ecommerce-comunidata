@@ -1,7 +1,11 @@
 import {
     AreaForm2,
     Input,
-    Form
+    Form,
+    ContainerTitle,
+    Title,
+    Container,
+    Button
 } from './styles'
 import React, {useState, useContext} from 'react';
 import {api} from '../../services/api'
@@ -9,7 +13,7 @@ import {apiCep} from '../../services/apiCep'
 import { FormContext } from '../../contexts/FormContexts';
 
 function CadastroEndereco() {
-    const {address, setAddress, callAPI} = useContext(FormContext)
+    const {address, setAddress, callAPI, handleClick, setForm, form} = useContext(FormContext)
     
     /*async function callAPI() {
         var cep = document.getElementById("cep").value;
@@ -17,23 +21,26 @@ function CadastroEndereco() {
         setAddress(result.data);
     }*/
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         var cep = document.getElementById("cep").value;
-        var response = 
-        api
-        .get(`/enderecos/${cep}/numero?numero=${address.numero}`)
-        .then((response => console.log(response.data))).catch(erro => console.log(erro));
-        
+        var response = await api.get(`/enderecos/${cep}/numero?numero=${address.numero}`)
         setAddress(response.data)
-        console.log(address)
+        setForm(prevState => ({...prevState, endereco: {id: response.data.id}}))
+
     }
+    console.log(form)
 
     // const handleChange = (event) => {
     //     const { name, value } = event.target;
     //     setAddress({[name]:value});
     // }
     return (
+    <>
+        <ContainerTitle>
+                <Title>Formulário de Cadastro</Title>
+            </ContainerTitle>
+            <Container>
         <Form onSubmit={handleSubmit}>
             <AreaForm2>
                 <Input id="cep"
@@ -51,11 +58,13 @@ function CadastroEndereco() {
                     placeholder="Número"
                     onChange={e => setAddress({numero: e.target.value})}
                     label="Numero"
-                    value={address?.numero}
+                    
                 />
-                <button type="submit">Concluir</button>
+                <Button /*{onClick={handleClick}}*/ type="submit">Concluir</Button>
             </AreaForm2>
         </Form>
+        </Container>
+    </>
     )
 };
 

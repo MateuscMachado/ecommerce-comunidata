@@ -29,6 +29,8 @@ export function FormProvider({ children }) {
     }
     const [form, setForm] = useState(initialFormState);
 
+    const [changeBody, setChangeBody] = useState(false)
+
     async function callAPI() {
         var cep = document.getElementById("cep").value;
         cep = cep.replace("-", "")
@@ -45,8 +47,12 @@ export function FormProvider({ children }) {
 
     }
 
+    const handleClick = () => {
+        setChangeBody(!changeBody)
+    }
+
     return (
-        <FormContext.Provider value={{ address, setAddress, form, setForm, callAPI, inserirCliente }} >
+        <FormContext.Provider value={{ address, setAddress, form, setForm, callAPI, inserirCliente, changeBody, setChangeBody, handleClick }} >
             {children}
         </FormContext.Provider>
     )

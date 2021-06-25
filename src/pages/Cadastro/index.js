@@ -4,11 +4,18 @@ import {useState, useContext} from 'react';
 import {apiCep} from '../../services/apiCep'
 import {api} from '../../services/api'
 import { FormContext } from '../../contexts/FormContexts';
+import {
+    ContainerButton,
+    Button,
+    ContainerTitle,
+    Title
+}
+from './styles'
 
 function Cadastro() {
 
-    const {address, setAddress, form, setForm, callAPI} = useContext(FormContext)
-    const [changeBody, setChangeBody] = useState(false)
+    const {address, setAddress, form, setForm, callAPI, changeBody, setChangeBody, handleClick} = useContext(FormContext)
+
 
     /*async function callAPI() {
         var cep = document.getElementById("cep").value;
@@ -27,11 +34,7 @@ function Cadastro() {
         
         setAddress(response.data)
     }*/
-
-    const handleClick = () => {
-        setChangeBody(!changeBody)
-    }
-
+    console.log(changeBody)
     return (
         <>
             {
@@ -39,7 +42,9 @@ function Cadastro() {
                     <CadastroEndereco /> :
                     <UserForm />
             }
-            <button onClick={handleClick}>Continuar!</button>
+            <ContainerButton>
+            <Button onClick={handleClick}>Continuar Cadastro</Button>
+            </ContainerButton>
         </>
     )
 }
