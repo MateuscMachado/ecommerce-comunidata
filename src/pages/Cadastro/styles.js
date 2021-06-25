@@ -7,7 +7,6 @@ export const Button= styled.button`
     background-color: white;
     border-radius: 0.5em;
 `;
-
 export const ContainerButton= styled.div`
     display: flex;
     flex-wrap: wrap;

@@ -22,5 +22,4 @@ function Produto(){
         <div>PAGINA PRODUTO</div>
     )
 }
-
 export default Produto

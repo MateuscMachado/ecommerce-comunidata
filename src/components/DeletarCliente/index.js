@@ -13,5 +13,4 @@ function DeletarCliente() {
         </Container>
     )
 }
-
 export default DeletarCliente;

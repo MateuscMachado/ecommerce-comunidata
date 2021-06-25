@@ -1,20 +1,11 @@
-import {
-    Container,
-    Title,
-    AreaOptions,
-    AreaButton,
-    AreaText,
-    Button,
-    Format,
-} from "./styles"
+import { Container, Title, AreaOptions, AreaButton, AreaText, Button, Format, } from "./styles"
 
-function DeletarProduto () {
+function DeletarProduto() {
     return (
         <Container>
             <Title>
                 Deletar Produto
             </Title>
-            
             <AreaOptions>
                 <AreaText>
                     Deseja mesmo apagar este produto?
@@ -28,5 +19,4 @@ function DeletarProduto () {
         </Container>
     )
 }
-
 export default DeletarProduto

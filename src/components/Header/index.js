@@ -2,12 +2,12 @@ import { HeaderStyle, Input, LogoHeader, Formatacao, Div, ButtonPesquisa, Entrar
 import { Link } from "react-router-dom";
 import { api } from "../../services/api";
 import { useState } from "react";
+
 function Header() {
 
     const [prodName, setProdName] = useState();
 
     const buscarNome = async () => {
-
         var response = await api.get(`/produtos/nome?nome=${document.getElementById("search").value}`)
         setProdName(response.data)
     }

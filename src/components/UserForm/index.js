@@ -1,14 +1,5 @@
 import React, { useState, useContext } from 'react';
-import {
-    Container,
-    Title,
-    Input,
-    Form,
-    AreaForm1,
-    ContainerTitle,
-    Button,
-    ContainerButton
-} from "./styles";
+import {Container,Title, Input, Form, AreaForm1, ContainerTitle, Button, ContainerButton} from "./styles";
 import CadastroEndereco from '../CadastroEndereco';
 import { FormContext } from '../../contexts/FormContexts';
 import {api} from '../../services/api';
@@ -22,8 +13,6 @@ function UserForm () {
             { ...form, ...newValue }
         ))
     }
-    console.log(form)
-    console.log(address)
 
     const inserirCliente = (e) => {
         e.preventDefault();
@@ -95,7 +84,6 @@ function UserForm () {
                     </ContainerButton>
                 </Form>
             </Container>
-
         </>
     );
 }

@@ -38,7 +38,6 @@ export function FormProvider({ children }) {
         setAddress(result.data);
     }
 
-
     const inserirCliente = (e) => {
         e.preventDefault();
         api

@@ -1,21 +1,14 @@
 import UserForm from "../../components/UserForm";
 import CadastroEndereco from "../../components/CadastroEndereco";
-import {useState, useContext} from 'react';
-import {apiCep} from '../../services/apiCep'
-import {api} from '../../services/api'
+import { useState, useContext } from 'react';
+import { apiCep } from '../../services/apiCep'
+import { api } from '../../services/api'
 import { FormContext } from '../../contexts/FormContexts';
-import {
-    ContainerButton,
-    Button,
-    ContainerTitle,
-    Title
-}
-from './styles'
+import { ContainerButton, Button, ContainerTitle, Title } from './styles'
 
 function Cadastro() {
 
-    const {address, setAddress, form, setForm, callAPI, changeBody, setChangeBody, handleClick} = useContext(FormContext)
-
+    const { address, setAddress, form, setForm, callAPI, changeBody, setChangeBody, handleClick } = useContext(FormContext)
 
     /*async function callAPI() {
         var cep = document.getElementById("cep").value;
@@ -34,7 +27,6 @@ function Cadastro() {
         
         setAddress(response.data)
     }*/
-    console.log(changeBody)
     return (
         <>
             {
@@ -43,7 +35,7 @@ function Cadastro() {
                     <UserForm />
             }
             <ContainerButton>
-            <Button onClick={handleClick}>Continuar Cadastro</Button>
+                <Button onClick={handleClick}>Continuar Cadastro</Button>
             </ContainerButton>
         </>
     )

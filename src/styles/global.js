@@ -11,4 +11,4 @@ export default createGlobalStyle`
 input {
     border-radius: 0.5em;
 }
-`
+`;

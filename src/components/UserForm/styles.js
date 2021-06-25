@@ -6,16 +6,12 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-   
 `;
 export const Form= styled.form`
     justify-content: space-between;
     display: flex;
     text-align: center;
-    
-
 `;
-
 export const Title = styled.h1`
     display: flex;
     align-items: center;
@@ -24,7 +20,6 @@ export const Title = styled.h1`
     margin-top: 2rem;
     color: #242528;
 `;
-
 export const Input = styled.input`
    margin: 1rem 2rem;
     width: 80%;
@@ -34,24 +29,18 @@ export const Input = styled.input`
     align-items: center;
     border-color: cadetblue;
     background-color: #E9E6E6
-    
 `;
-
 export const AreaForm1 = styled.div`
     width: 40%;
     align-items: center;
 `;
-
-
 export const ContainerTitle = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 `;
-
 export const Button = styled.button`
     display: flex;
     flex-wrap: wrap;
@@ -65,6 +54,6 @@ export const Button = styled.button`
     margin-left: 15%;
     background-color: #EC3E3E
 `;
-
 export const ContainerButton= styled.div`
+
 `;

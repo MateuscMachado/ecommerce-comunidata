@@ -16,33 +16,25 @@ export const Input = styled.input`
     justify-content: flex-start;
     align-items: center;
     border-color: cadetblue;
-    background-color: #E9E6E6
-    
+    background-color: #E9E6E6;
 `;
-
 export const AreaForm2 = styled.div`
     margin-bottom: 70%;
     width: 80%;
     align-items: center;
 `;
-
-export const Form= styled.form`
+export const Form = styled.form`
     justify-content: space-between;
     display: flex;
     text-align: center;
-
 `;
-
-
 export const ContainerTitle = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 `;
-
 export const Title = styled.h1`
     display: flex;
     align-items: center;
@@ -51,7 +43,6 @@ export const Title = styled.h1`
     margin-top: 1rem;
     color: #242528;
 `;
-
 export const Button = styled.button`
     width: 30%;
     height: 15%;

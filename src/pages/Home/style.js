@@ -5,4 +5,8 @@ a {
     text-decoration: none;
     color: black;
 }
-`
+`;
+export const Div = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`;
