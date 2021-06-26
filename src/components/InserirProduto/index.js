@@ -36,7 +36,7 @@ function InserirProduto() {
             </Title>
             <InfoID>
                 <Input id="catId" type="text" placeholder="ID da categoria"
-                    onChange={e => setInput({ endereco: { id: e.target.value } })}/>
+                    onChange={e => setInput({ categoria: { id: e.target.value } })}/>
             </InfoID>
             <InfoProduct>
                 <Input id="InputNome" type="text" placeholder="Nome"
@@ -66,4 +66,4 @@ function InserirProduto() {
         </Container>
     )
 }
-export default InserirProduto
+export default InserirProduto;

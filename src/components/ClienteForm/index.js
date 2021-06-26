@@ -28,7 +28,6 @@ function ClienteForm (props) {
         var response = await api.put(`/clientes/${props.id}`, form)
     }
 
-
     return (
         <>
             <ContainerTitle>
