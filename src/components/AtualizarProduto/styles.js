@@ -54,16 +54,16 @@ export const AreaButton = styled.div`
     width: 70%;
     height: 20%;
 `;
-export const Button = styled.button`
-    padding: 5%;
-    width: 70%;
-    font-size: 150%;
-    font-weight: bold;
-    border-radius: 0.5em;
-`;
 export const InputImagem = styled.input`
     background-color: #e9e6e6;
     font-size: 15px;
     font-weight: bold;
     padding: 1.5em;
 `;
+export const Button = styled.button`
+    padding: 5%;
+    width: 70%;
+    font-size: 150%;
+    font-weight: bold;
+    border-radius: 0.5em;
+`
