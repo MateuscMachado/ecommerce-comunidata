@@ -69,12 +69,12 @@ export const Format = styled.div`
 `;
 
 export const Input = styled.input`
-    margin: 1.5rem 2rem;
-    width: 80%;
-    height: 14%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-color: cadetblue;
-    background-color: #E9E6E6;
+    background-color: #e9e6e6;
+    margin-top: 8%;
+    font-size: 20px;
+    border: 3px thin #c4c4c4;
+    border-radius: 0.5em;
+    width:24%;
+    margin-left: 35%;;
+    height: 40%;
 `;
