@@ -21,8 +21,9 @@ function DeletarProduto() {
                 <AreaText>
                     Deseja mesmo apagar este produto?
                 </AreaText>
-                <Input id= "idProd" type= "number" placeholder="ID do Produto" onChange={setId}/>
-                <Format />
+                <Format>
+                    <Input id= "idProd" type= "number" placeholder="ID do Produto" onChange={setId}/>
+                </Format>
                 <AreaButton>
                     <Button onClick={deletarProduto}>Sim</Button>
                     <Button>Cancelar</Button>

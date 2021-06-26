@@ -46,7 +46,7 @@ function AtualizarProduto() {
                 Atualizar Produto
             </Title>
             <InfoID>
-                 <Input id="prodtId" type="text" placeholder="ID do produto"
+                 <Input className="prodId" id= "prodId" type="text" placeholder="ID do produto"
                     onChange={e => setInput({id: e.target.value })}/>
                 <Input id="catId" type="text" placeholder="ID da categoria"
                     onChange={e => setInput({ categoria: { id: e.target.value } })}/>
