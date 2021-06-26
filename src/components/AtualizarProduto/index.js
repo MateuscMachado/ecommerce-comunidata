@@ -45,12 +45,12 @@ function AtualizarProduto() {
             <Title>
                 Atualizar Produto
             </Title>
-            <InfoID>
+            <InfoProduct>
                  <Input id="prodtId" type="text" placeholder="ID do produto"
                     onChange={e => setInput({id: e.target.value })}/>
                 <Input id="catId" type="text" placeholder="ID da categoria"
                     onChange={e => setInput({ categoria: { id: e.target.value } })}/>
-            </InfoID>
+            </InfoProduct>
             <InfoProduct>
                 <Input id="InputNome" type="text" placeholder="Nome"
                     onChange={e => setInput({ nome: e.target.value })}/>

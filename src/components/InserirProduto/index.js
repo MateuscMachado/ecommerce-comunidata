@@ -7,6 +7,7 @@ function InserirProduto() {
     
     const inserirProd = async () => {
         await api.post(`/produtos`, form)
+        alert("Produto inserido com sucesso!!!")
     }
     
     const initialFormState = {
