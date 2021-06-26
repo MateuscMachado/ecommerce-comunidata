@@ -33,7 +33,7 @@ function Login() {
     }
 
     return (
-        <>
+        <Container>
             <ContainerTitle>
                 <Title>Faça seu Login</Title>
             </ContainerTitle>
@@ -47,7 +47,7 @@ function Login() {
                     <Link to="/cadastro"><p>Não tem cadastro? Crie uma conta</p></Link>
                 </Texto>
             </Container>
-        </>
+        </Container>
     )
 }
 export default Login;

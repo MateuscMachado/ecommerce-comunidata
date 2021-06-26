@@ -11,4 +11,15 @@ export default createGlobalStyle`
 input {
     border-radius: 0.5em;
 }
+body{
+    background: lightgray;
+}
+
+div.insideContainer{
+    background: #C4C4C4;
+    position: relative;
+    height: 100vh;
+    width: 70%;
+    margin-left: 15%;
+}
 `;

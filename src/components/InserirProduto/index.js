@@ -1,49 +1,48 @@
-import { useEffect, useState } from "react"
+import {  useState } from "react"
 import { api } from "../../services/api";
 
-import { Container, Title, Input, InfoProduct, AreaImage, AreaButton, Button, InputImagem } from "./styles"
+import { Container, Title, Input, InfoProduct, AreaButton, Button, InfoID } from "./styles"
 
 function InserirProduto() {
-
+    
+    const inserirProd = async () => {
+        await api.post(`/produtos`, form)
+    }
+    
     const initialFormState = {
         nome: '',
-        quantidade: '',
+        qtdEstoque: '',
         descricao: '',
         dataCadastro: '',
         valorUnitario: '',
-        categoria: '',
-        urlImagem: '',
+        categoria: {
+             id: '' 
+            },
+        url: '',
     }
 
     const [form, setForm] = useState(initialFormState);
-    const [listaProdutos, setListaProdutos] = useState([]);
 
     const setInput = (newValue) => {
         setForm(form => (
             { ...form, ...newValue }
-        ))
+            ))
     }
-
-    useEffect(() => {
-        async function handleProducts() {
-            const response = await api.get(`/produtos`)
-            setListaProdutos(response.data)
-        }
-        handleProducts();
-    }, [])
 
     return (
         <Container>
             <Title>
                 Inserir Produto
             </Title>
+            <InfoID>
+                <Input id="catId" type="text" placeholder="ID da categoria"
+                    onChange={e => setInput({ endereco: { id: e.target.value } })}/>
+            </InfoID>
             <InfoProduct>
                 <Input id="InputNome" type="text" placeholder="Nome"
-                    onChange={e => setInput({ nome: e.target.value })}
-                    label="Nome" />
+                    onChange={e => setInput({ nome: e.target.value })}/>
                 <Input id="InputQuantidade" type="text" placeholder="Quantidade em estoque"
-                    onChange={e => setInput({ quantidade: e.target.value })}
-                    label="Quantidade" />
+                    onChange={e => setInput({ qtdEstoque: e.target.value })} />
             </InfoProduct>
             <InfoProduct>
                 <Input id="InputDescricao" type="text" placeholder="Descrição"
@@ -57,15 +56,12 @@ function InserirProduto() {
                 <Input id="InputValor" type="text" placeholder="Valor unitário"
                     onChange={e => setInput({ valorUnitario: e.target.value })}
                     label="Valor-Unitario" />
-                <Input id="InputCategoria" type="text" placeholder="Categoria"
-                    onChange={e => setInput({ categoria: e.target.value })}
-                    label="Categoria" />
+                <Input id="InputUrl" type="text" placeholder="URL da Imagem"
+                    onChange={e => setInput({ url: e.target.value })}
+                    label="Url" />
             </InfoProduct>
-            <AreaImage>
-                <InputImagem id="InputImagem" type="image" />
-            </AreaImage>
             <AreaButton>
-                <Button type="submit">Concluído</Button>
+                <Button onClick={inserirProd}>Concluído</Button>
             </AreaButton>
         </Container>
     )

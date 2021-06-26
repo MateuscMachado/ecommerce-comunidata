@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
+    position: relative;
     background-color: rgb(30, 75, 117);
     height: 3em;
     display: flex ;
-    box-shadow: 5em 5em 1em black;
-`;
+    //border: black solid 5px;
+    box-shadow: 0 0 1em rgb(30, 75, 117);
+    z-index: 1;
+    `
 export const Input = styled.input`
     width: 50vh;
 `;

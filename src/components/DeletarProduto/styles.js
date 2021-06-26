@@ -62,3 +62,14 @@ export const Button = styled.button`
 export const Format = styled.div`
     height: 70%;
 `;
+
+export const Input = styled.input`
+    margin: 1.5rem 2rem;
+    width: 80%;
+    height: 14%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-color: cadetblue;
+    background-color: #E9E6E6;
+`;

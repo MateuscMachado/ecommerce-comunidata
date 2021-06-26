@@ -54,16 +54,20 @@ export const ContainerTitle = styled.div`
 
 export const Button = styled.button`
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    //flex-wrap: wrap;
+    //flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20rem;
+    //margin-top: 20rem;
     height: 20%;
-    width:15em;
+    width:10em;
     border-radius: 0.5em;
-    margin-left: 15%;
-    background-color: #EC3E3E
+    //margin-left: 15%;
+    background-color: rgb(30, 75, 117);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 6px 6px 6px black;
 `;
 
 export const ContainerButton= styled.div`

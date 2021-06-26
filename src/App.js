@@ -15,8 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div style={{ background: "lightgray", height: "100vh", display: "flex", justifyContent: "center" }}>
-        <div style={{ background: "#C4C4C4", height: "100vh", width: "70%" }}>
+        <div className = "insideContainer">
           <Switch>
             <FormProvider>
               <Route path='/' exact component={Home} />
@@ -29,9 +28,8 @@ function App() {
             </FormProvider>
           </Switch>
         </div>
-      </div>
-      <GlobalStyle />
       <Footer />
+      <GlobalStyle />
     </BrowserRouter>
   )
 }

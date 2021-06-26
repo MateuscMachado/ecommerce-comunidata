@@ -4,6 +4,7 @@ export const FooterStyle = styled.footer`
     box-shadow: 0 0 1em rgb(30, 75, 117);
     background-color: rgb(30, 75, 117);
     height: 12em;
+    color: white;
 `;
 export const Up = styled.div`
     display: flexbox;
@@ -51,6 +52,16 @@ export const Down = styled.div`
     flex-direction: column;
     margin-left:41% ;
 `;
-export const P = styled.div`
+export const P = styled.p`
 
 `;
+
+export const AboutP = styled.p`
+        transform: scale(-1, 1);
+        color: white;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1)
+`

@@ -32,8 +32,8 @@ function AreaCliente() {
                 </Aside>
                 {
                     body === 1 ?
-                        <AtualizarCliente id={params.clientes} /> :
-                        <DeletarCliente id={params.clientes}/>
+                        <AtualizarCliente id={params.clientes} />:
+                        <DeletarCliente id={params.clientes} />
                 }
             </Container>
         </>
