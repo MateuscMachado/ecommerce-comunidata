@@ -16,9 +16,7 @@ function UserForm () {
 
     const inserirCliente = (e) => {
         e.preventDefault();
-        api
-        .post(`/clientes`, form)
-        .then((response => console.log(response.data)));
+        api.post(`/clientes`, form).then((response => console.log(response.data)));
     }
 
     return (

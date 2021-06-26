@@ -1,7 +1,6 @@
 import { AreaForm2, Input, Form, ContainerTitle, Title, Container, Button } from './styles'
 import React, { useState, useContext } from 'react';
 import { api } from '../../services/api'
-import { apiCep } from '../../services/apiCep'
 import { FormContext } from '../../contexts/FormContexts';
 
 function CadastroEndereco() {
@@ -15,9 +14,16 @@ function CadastroEndereco() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         var cep = document.getElementById("cep").value;
-        var response = await api.get(`/enderecos/${cep}/numero?numero=${address.numero}`)
-        setAddress(response.data)
-        setForm(prevState => ({ ...prevState, endereco: { id: response.data.id } }))
+        api.get(`/enderecos/${cep}/numero?numero=${address.numero}`)
+        .then((response)=>{
+            setAddress(response.data);
+            setForm(prevState => ({ ...prevState, endereco: { id: response.data.id } }));
+            handleClick()})
+            .catch((error)=>{
+            alert(error.message)
+        })
+        
+        
     }
     // const handleChange = (event) => {
     //     const { name, value } = event.target;
@@ -47,7 +53,7 @@ function CadastroEndereco() {
                             onChange={e => setAddress({ numero: e.target.value })}
                             label="Numero"
                         />
-                        <Button /*{onClick={handleClick}}*/ type="submit">Concluir</Button>
+                        <Button type="submit">Concluir</Button>
                     </AreaForm2>
                 </Form>
             </Container>
