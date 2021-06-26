@@ -5,7 +5,6 @@ import AtualizarCliente from "../../components/AtualizarCliente";
 import DeletarCliente from "../../components/DeletarCliente";
 import { useRouteMatch } from "react-router-dom";
 
-
 function AreaCliente() {
     const [body, setBody] = useState(1)
 
@@ -32,7 +31,7 @@ function AreaCliente() {
                 </Aside>
                 {
                     body === 1 ?
-                        <AtualizarCliente id={params.clientes} />:
+                        <AtualizarCliente id={params.clientes} /> :
                         <DeletarCliente id={params.clientes} />
                 }
             </Container>

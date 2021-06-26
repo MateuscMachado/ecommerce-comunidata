@@ -1,5 +1,5 @@
 import { Link, useHistory } from "react-router-dom"
-import { Button, Container, Input, Texto, ContainerTitle, Title } from "./styles"
+import { Button, Container, Input, Texto, Title } from "./styles"
 import { useEffect, useState } from "react"
 import { api } from "../../services/api"
 
@@ -11,7 +11,6 @@ function Login() {
 
     useEffect(() => {
         const listClientes = async (e) => {
-            //e.preventDefault();
             const response = await api.get("/clientes")
             setClientes(response.data.content)
         }
