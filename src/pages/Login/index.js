@@ -33,11 +33,9 @@ function Login() {
     }
 
     return (
-        <Container>
-            <ContainerTitle>
+        <Container className="outerContainer">
+            <Container className="innerContainer">
                 <Title>Faça seu Login</Title>
-            </ContainerTitle>
-            <Container>
                 <form onSubmit={(e) => handleLogin(e)} >
                     <Input id="username" onChange={a => setNome(a.target.value)} type="text" placeholder="Nome Usuário" />
                     <Input id="password" onChange={b => setSenha(b.target.value)} type="password" placeholder="Senha Usuário " />

@@ -21,7 +21,7 @@ function AreaCliente() {
     return (
         <>
             <Banner>
-                <h1>Bem Vindo "Nome"</h1>
+                <h1>Bem Vindo!</h1>
             </Banner>
             <Container>
                 <Aside>

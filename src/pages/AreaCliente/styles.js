@@ -23,8 +23,11 @@ export const List = styled.ul`
     width: 80%;
 `;
 export const Items = styled.li`
-    border: solid 1px black;
     margin-top: 10%;
+    background: #242528;
+    color: #f2f2f2;
+    box-shadow: 0 0 2em #242528;
+    border-radius: 0.2em;
     &:hover {
         background-color: #c4c4c4;
         cursor: pointer;
