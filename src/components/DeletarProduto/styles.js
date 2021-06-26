@@ -21,10 +21,13 @@ export const AreaOptions = styled.div`
     flex-direction: column;
     justify-content: center;
     background-color: #c4c4c4;
-    border-radius: 2rem;
-    height: 50%;
+    border-radius: 1em;
+    height: 40%;
     width: 90%;
     margin-bottom: 30%;
+    background: #242528;
+    color: #f2f2f2;
+    box-shadow: 0 0 2em #242528;
 `;
 export const AreaText = styled.div`
     display: flex;
@@ -60,6 +63,8 @@ export const Button = styled.button`
     }
 `;
 export const Format = styled.div`
+    display: flex;
+    justify-content: center;
     height: 70%;
 `;
 
