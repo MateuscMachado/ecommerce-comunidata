@@ -12,7 +12,6 @@ function Produto(){
     const fetchData = async () => {
         var response = api.get(`/produtos/nome?nome=${params?.prodName?.nome}`)
       setProdName(response.data);
-      console.log(params);
     }
 
     fetchData();
@@ -22,4 +21,4 @@ function Produto(){
         <div>PAGINA PRODUTO</div>
     )
 }
-export default Produto
+export default Produto;
