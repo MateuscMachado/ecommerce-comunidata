@@ -7,8 +7,6 @@ function DeletarCliente(props) {
         var response = await api.delete(`/clientes/${props.id}`)
         alert("Cliente deletado com sucesso!")
     }
-    console.log("PROPS")
-    console.log(props)
     
     return (
         <Container>

@@ -10,14 +10,7 @@ function AtualizarCliente(props) {
     const handleClick = () => {
         setChangeBody(!changeBody)
     }
-
-    // const atualizarCliente = (e) =>{
-    //     e.preventDefault();
-    //     api
-    //     .put(`/clientes`, props.id)
-    //     .then((response => console.log(response.data)));
-    // }
-
+    
     return (
         <Container>
             {

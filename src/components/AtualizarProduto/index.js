@@ -5,15 +5,6 @@ import { api } from "../../services/api";
 
 function AtualizarProduto() {
 
-    //const [infoProduto, setInfoProduto] = useState([]);
-
-    /* // Setar as novas informações de produto
-    function apiRequest() {
-
-        setInfoProduto(produtos);
-    }
-    */
-   
    const initialFormState = {
        id: '',
        nome: '',
