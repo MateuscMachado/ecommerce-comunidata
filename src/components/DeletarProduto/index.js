@@ -1,6 +1,17 @@
-import { Container, Title, AreaOptions, AreaButton, AreaText, Button, Format, } from "./styles"
+import { useEffect, useState } from "react"
+import { api } from "../../services/api"
+import { Container, Title, AreaOptions, AreaButton, AreaText, Button, Format, Input } from "./styles"
 
 function DeletarProduto() {
+    const [id, setId] = useState();
+
+    
+    const deletarProduto = async ()=>{
+        await api.delete(`/produtos/${id.target.value}`)
+        alert("Produto eliminado com sucesso!!!")
+    }
+
+
     return (
         <Container>
             <Title>
@@ -10,9 +21,10 @@ function DeletarProduto() {
                 <AreaText>
                     Deseja mesmo apagar este produto?
                 </AreaText>
+                <Input id= "idProd" type= "number" placeholder="ID do Produto" onChange={setId}/>
                 <Format />
                 <AreaButton>
-                    <Button>Sim</Button>
+                    <Button onClick={deletarProduto}>Sim</Button>
                     <Button>Cancelar</Button>
                 </AreaButton>
             </AreaOptions>
