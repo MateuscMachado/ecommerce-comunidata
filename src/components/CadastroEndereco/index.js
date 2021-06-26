@@ -7,11 +7,6 @@ import { FormContext } from '../../contexts/FormContexts';
 function CadastroEndereco() {
     const { address, setAddress, callAPI, handleClick, setForm, form } = useContext(FormContext)
 
-    /*async function callAPI() {
-        var cep = document.getElementById("cep").value;
-        var result = await apiCep.get(`/${cep}/json`);
-        setAddress(result.data);
-    }*/
     const handleSubmit = async (e) => {
         e.preventDefault();
         var cep = document.getElementById("cep").value;
@@ -19,10 +14,6 @@ function CadastroEndereco() {
         setAddress(response.data)
         setForm(prevState => ({ ...prevState, endereco: { id: response.data.id } }))
     }
-    // const handleChange = (event) => {
-    //     const { name, value } = event.target;
-    //     setAddress({[name]:value});
-    // }
     return (
         <>
             <ContainerTitle>

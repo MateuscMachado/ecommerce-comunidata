@@ -1,5 +1,4 @@
 import { Container, ImageContainer, Image, TextContainer, Price, Title } from './styles';
-import { Link } from 'react-router-dom'
 
 function CardProduto(props) {
     console.log(props.url);

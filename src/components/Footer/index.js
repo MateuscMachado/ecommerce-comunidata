@@ -1,5 +1,4 @@
-import { Up, About, H1, Follow, Image, Logo, Down, P, I, AboutP } from './styles'
-import { FooterStyle } from "./styles";
+import { Up, About, H1, Follow, Image, Logo, Down, P, I, AboutP, FooterStyle} from './styles';
 
 function Footer() {
     return (
